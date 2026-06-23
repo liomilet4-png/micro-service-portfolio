@@ -1,0 +1,79 @@
+name: 固定价微服务需求确认
+description: 提交脱敏样例和验收标准，用于确认是否可接单
+title: "[需求确认] "
+labels: ["request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        只提交脱敏样例和最小复现。不要上传真实客户数据、账号密码、验证码、身份证、银行卡、私钥、生产环境配置或未公开商业秘密。
+  - type: dropdown
+    id: service_type
+    attributes:
+      label: 需求类型
+      options:
+        - CSV/Excel/JSON 清洗转换或文件批处理（99 元起）
+        - Python/PowerShell 脚本报错或小修（199 元起）
+        - GitHub Actions / 测试失败小修（199-399 元）
+        - 不确定，先帮我判断
+    validations:
+      required: true
+  - type: textarea
+    id: input_sample
+    attributes:
+      label: 脱敏输入样例
+      description: 粘贴 5-20 行脱敏样例，或描述文件结构。
+      placeholder: "例如：字段名、几行 CSV、报错命令、workflow 片段。"
+    validations:
+      required: true
+  - type: textarea
+    id: expected_output
+    attributes:
+      label: 期望输出
+      description: 描述希望得到什么文件、格式、字段、目录结构或测试结果。
+    validations:
+      required: true
+  - type: textarea
+    id: current_problem
+    attributes:
+      label: 当前报错或卡点
+      description: 粘贴脱敏日志、报错截图文字、运行命令或当前处理流程。
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: 期望截止时间
+      placeholder: "例如：今晚 22:00 前 / 明天中午前 / 不急"
+    validations:
+      required: true
+  - type: dropdown
+    id: fixed_price
+    attributes:
+      label: 是否接受固定价
+      options:
+        - 接受，先报价再开工
+        - 需要先确认范围
+        - 不接受固定价
+    validations:
+      required: true
+  - type: dropdown
+    id: payment_protection
+    attributes:
+      label: 付款保障方式
+      options:
+        - 平台托管
+        - 先付定金
+        - 合同/订单保障
+        - 暂未确定
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety_check
+    attributes:
+      label: 安全确认
+      options:
+        - label: 我已确认不包含真实客户数据、生产密码、验证码、身份证、银行卡、私钥或未公开商业秘密。
+          required: true
+        - label: 我理解确认固定价格、验收标准和付款保障后才会开工。
+          required: true

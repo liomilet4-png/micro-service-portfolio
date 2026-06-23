@@ -51,6 +51,17 @@
     .warn { background: var(--warn-soft); color: var(--warn); border-color: #ffe0a3; }
     .muted { color: var(--muted); }
     .cta { background: var(--accent-soft); border-color: #b7ded7; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .button {
+      display: inline-block;
+      color: #ffffff;
+      background: var(--accent);
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 7px;
+      font-weight: 700;
+    }
+    .button.secondary { color: var(--accent); background: #ffffff; border: 1px solid #9ed4cc; }
     @media (max-width: 760px) {
       main { padding: 22px 14px 44px; }
       h1 { font-size: 28px; }
@@ -67,6 +78,10 @@
     <span class="badge">一次小范围修改</span>
     <h1>99 元起：办公数据、文件批处理、脚本和 CI 小修</h1>
     <p class="lead">只接 1-4 小时内能完成的小范围任务。先确认固定价格、验收标准、平台托管或定金，再开工。</p>
+    <div class="actions">
+      <a class="button" href="https://github.com/liomilet4-png/micro-service-portfolio/issues/new?template=micro_service_request.yml">提交脱敏需求</a>
+      <a class="button secondary" href="https://github.com/liomilet4-png/micro-service-portfolio">查看 GitHub 仓库</a>
+    </div>
   </section>
 
   <section class="card">
@@ -101,6 +116,7 @@
       <li>期望截止时间。</li>
     </ol>
     <p>可以通过你看到这条服务帖的平台私信联系。请不要公开发送真实客户数据、账号密码或隐私材料。</p>
+    <p>如果你有 GitHub 账号，也可以点击页面顶部“提交脱敏需求”，按表单填写最小复现和验收标准。</p>
   </section>
 
   <section class="card">

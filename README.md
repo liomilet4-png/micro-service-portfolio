@@ -4,6 +4,10 @@
 
 https://liomilet4-png.github.io/micro-service-portfolio/
 
+提交脱敏需求：
+
+https://github.com/liomilet4-png/micro-service-portfolio/issues/new?template=micro_service_request.yml
+
 服务范围：
 
 - 99 元起：CSV / Excel / JSON 清洗转换、批量文件整理、日志汇总。
