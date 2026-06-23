@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>固定价技术微服务作品集</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; margin: 0; color: #1f2937; background: #f7f8fa; }
+    main { max-width: 920px; margin: 0 auto; padding: 32px 20px 56px; }
+    h1 { font-size: 30px; margin: 0 0 12px; }
+    h2 { margin-top: 34px; border-top: 1px solid #d8dee8; padding-top: 24px; }
+    h3 { margin-bottom: 6px; }
+    .lead { color: #4b5563; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; margin: 16px 0; }
+    code, pre { background: #f1f5f9; border-radius: 6px; }
+    code { padding: 2px 5px; }
+    pre { padding: 12px; overflow-x: auto; }
+    .price { font-weight: 700; color: #0f766e; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>固定价技术微服务作品集</h1>
+  <p class="lead">案例均使用虚构或公开测试数据，不代表真实客户。服务只覆盖办公数据/文件自动化、现有脚本和 CI 小修。</p>
+
+  <section class="card">
+    <h2>服务价格入口</h2>
+    <ul>
+      <li><span class="price">99 元起</span>：CSV / Excel / JSON 清洗、批量文件整理、日志汇总。</li>
+      <li><span class="price">199 元起</span>：Python / PowerShell 报错、GitHub Actions、小范围测试失败。</li>
+      <li><span class="price">399 元起</span>：复杂批处理或 CI/测试组合问题。</li>
+    </ul>
+    <p>开工前必须确认固定价格、验收标准、平台托管或定金。</p>
+  </section>
+
+  <section class="card">
+    <h2>案例 1：CSV/Excel 清洗工具</h2>
+    <h3>问题</h3>
+    <p>订单 CSV 字段名不统一，日期格式混乱，存在重复订单和错误金额。</p>
+    <h3>输入</h3>
+    <p><code>input_orders.csv</code> 和 <code>mapping.json</code>。</p>
+    <h3>输出</h3>
+    <p><code>out/clean_orders.csv</code> 与 <code>out/error_rows.csv</code>。</p>
+    <h3>运行命令</h3>
+    <pre>python clean_data.py --input input_orders.csv --mapping mapping.json --output out/clean_orders.csv --errors out/error_rows.csv
+python test_clean_data.py</pre>
+    <h3>测试结果</h3>
+    <pre>clean_rows=3 error_rows=2
+csv_excel_cleaning tests passed</pre>
+    <h3>文本结果</h3>
+    <p>完成字段映射、去重、日期标准化，并把金额错误或日期无法识别的行输出到错误报告。</p>
+  </section>
+
+  <section class="card">
+    <h2>案例 2：批量文件整理工具</h2>
+    <h3>问题</h3>
+    <p>一批图片和文档文件名混乱，需要预览、分类、批量重命名，并能检查冲突。</p>
+    <h3>输入</h3>
+    <p>虚构 fixture 目录中的若干文件。</p>
+    <h3>输出</h3>
+    <p>按扩展名分类后的目录、统一命名文件和 <code>undo_manifest.csv</code>。</p>
+    <h3>运行命令</h3>
+    <pre>powershell -NoProfile -ExecutionPolicy Bypass -File .\organize_files.ps1 -InputDir .\fixture -OutputDir .\out -DryRun
+powershell -NoProfile -ExecutionPolicy Bypass -File .\test_organize_files.ps1</pre>
+    <h3>测试结果</h3>
+    <pre>batch_file_organizer tests passed</pre>
+    <h3>文本结果</h3>
+    <p>支持 dry-run 预览、冲突检查、按扩展名归档和撤销清单。</p>
+  </section>
+
+  <section class="card">
+    <h2>案例 3：GitHub Actions 修复</h2>
+    <h3>问题</h3>
+    <p>workflow 没有正确安装测试依赖，导致 CI 无法稳定运行。</p>
+    <h3>输入</h3>
+    <p>示例 Python 项目、测试文件和故意失败的 workflow。</p>
+    <h3>输出</h3>
+    <p>根因说明、修复后的 workflow 思路和本地测试记录。</p>
+    <h3>运行命令</h3>
+    <pre>python -m unittest discover -s tests</pre>
+    <h3>测试结果</h3>
+    <pre>..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK</pre>
+    <h3>文本结果</h3>
+    <p>补齐依赖安装步骤，固定 CI 运行入口，并保留根因说明便于验收。</p>
+  </section>
+
+  <section class="card">
+    <h2>不承接</h2>
+    <p>不接完整网站、App、小程序、全栈开发、Web3、钱包、交易、安全测试、逆向、漏洞利用、爬取私人数据、生产密码或无限修改。</p>
+  </section>
+</main>
+</body>
+</html>
