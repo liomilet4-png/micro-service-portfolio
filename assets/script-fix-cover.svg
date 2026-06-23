@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">脚本报错和小修服务封面</title>
+  <desc id="desc">199 元起，Python、PowerShell 报错修复，日志和参数增强。</desc>
+  <rect width="1200" height="675" fill="#f6f7f9"/>
+  <rect x="64" y="56" width="1072" height="563" rx="18" fill="#ffffff" stroke="#dfe4ec" stroke-width="2"/>
+  <rect x="96" y="92" width="230" height="52" rx="26" fill="#e7f5f2"/>
+  <text x="124" y="126" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#0f766e">199 元起</text>
+  <text x="96" y="214" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="56" font-weight="800" fill="#172033">脚本报错和小修</text>
+  <text x="96" y="278" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="30" fill="#4b5563">Python / PowerShell 路径、编码、参数、异常提示</text>
+  <g transform="translate(96 342)">
+    <rect width="455" height="152" rx="12" fill="#172033"/>
+    <text x="30" y="48" font-family="Consolas, monospace" font-size="24" fill="#9ee6d7">&gt; python task.py --input data.csv</text>
+    <text x="30" y="88" font-family="Consolas, monospace" font-size="24" fill="#ffcf99">FileNotFoundError: path...</text>
+    <text x="30" y="128" font-family="Consolas, monospace" font-size="24" fill="#ffffff">fixed: path + encoding + log</text>
+    <rect x="500" width="455" height="152" rx="12" fill="#f1f5f9"/>
+    <text x="530" y="56" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="28" fill="#172033">定位原因</text>
+    <text x="530" y="102" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="28" fill="#172033">修复脚本并复跑</text>
+  </g>
+  <text x="96" y="556" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="26" fill="#0f766e">先看脱敏最小复现，确认固定价和验收后开工</text>
+</svg>

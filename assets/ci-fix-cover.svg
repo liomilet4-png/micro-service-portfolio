@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">CI 和测试小修服务封面</title>
+  <desc id="desc">399 元起，GitHub Actions、workflow 和小范围测试失败修复。</desc>
+  <rect width="1200" height="675" fill="#f6f7f9"/>
+  <rect x="64" y="56" width="1072" height="563" rx="18" fill="#ffffff" stroke="#dfe4ec" stroke-width="2"/>
+  <rect x="96" y="92" width="230" height="52" rx="26" fill="#e7f5f2"/>
+  <text x="124" y="126" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#0f766e">399 元起</text>
+  <text x="96" y="214" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="56" font-weight="800" fill="#172033">CI / 测试小修</text>
+  <text x="96" y="278" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="30" fill="#4b5563">GitHub Actions、workflow、依赖安装、测试失败定位</text>
+  <g transform="translate(96 340)">
+    <rect width="300" height="118" rx="12" fill="#fff5df" stroke="#ffd68a"/>
+    <text x="28" y="46" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="28" fill="#8a4b00">失败原因</text>
+    <text x="28" y="86" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" fill="#8a4b00">依赖 / 路径 / 命令</text>
+    <rect x="330" width="300" height="118" rx="12" fill="#e7f5f2" stroke="#9ed4cc"/>
+    <text x="358" y="46" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="28" fill="#0f766e">修复补丁</text>
+    <text x="358" y="86" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" fill="#0f766e">最小改动</text>
+    <rect x="660" width="300" height="118" rx="12" fill="#f1f5f9" stroke="#dfe4ec"/>
+    <text x="688" y="46" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="28" fill="#172033">验证结果</text>
+    <text x="688" y="86" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" fill="#172033">命令可复跑</text>
+  </g>
+  <text x="96" y="546" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="26" fill="#0f766e">交付根因说明、修复记录、测试结果和一次小修改</text>
+</svg>
